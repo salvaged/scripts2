@@ -1,0 +1,22 @@
+#Creating service for an application in Linux
+
+
+[Unit]
+Description=Red Giant Licensing Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/redgiant/x64_l1/
+ExecStart=/redgiant/x64_l1/rlm
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+Chmod +x SERVICENAME.service
+cp SERVICENAME.service /etc/systemd/system/
