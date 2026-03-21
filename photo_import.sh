@@ -18,7 +18,7 @@ NC='\033[0m'
 print_header() {
     echo ""
     echo -e "${CYAN}${BOLD}╔══════════════════════════════════════════╗${NC}"
-    echo -e "${CYAN}${BOLD}║       📷  Photo Card Importer  📷        ║${NC}"
+    echo -e "${CYAN}${BOLD}║           Photo Card Importer            ║${NC}"
     echo -e "${CYAN}${BOLD}╚══════════════════════════════════════════╝${NC}"
     echo ""
 }
